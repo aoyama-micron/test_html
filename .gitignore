@@ -1,0 +1,7 @@
+*.code-workspace
+
+/**/image
+
+/node_module
+
+.DS_Store

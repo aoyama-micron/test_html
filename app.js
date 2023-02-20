@@ -10,8 +10,16 @@ $('#addTodo')
 $(document)
 .on('change', 'input[type=checkbox]', function(){
 	if($(this).is(':checked')){
-		$(this).parent().addClass('text-decoration');
+		$(this).parent().css({
+			'text-decoration': 'underline',
+			'background-color': '#ff0',
+			'color': '#f00'
+		});
 	} else {
-		$(this).parent().removeClass('none-text-decoration');
+		$(this).parent().css({
+			'text-decoration': 'none',
+			'background-color': 'transparent',
+			'color': '#000'
+		});
 	}
 });
